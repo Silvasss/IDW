@@ -102,6 +102,8 @@ var products = [
 ];
 
 function gridproducts(array) {
+    // Função que apresenta os produtos que foram recebidos pela função.
+
     const displayproducts = document.querySelector(".product-container");
 
     for (let i = 0; i < array.length; i++) {
@@ -135,6 +137,8 @@ function gridproducts(array) {
 }
 
 function filterProductsType() {
+    // Toda vez que um filtro e selecionado e executada, pegando todos os itens selecionados novamente.
+
     var filtros = [];
 
     var obj = {};
@@ -189,6 +193,8 @@ function filterProductsType() {
 }
 
 function filter(obj) {
+    // Verifica se existe algum produto na tela.
+
     var fil = [];
 
     if (!obj.length) {
@@ -208,6 +214,7 @@ function filter(obj) {
         // Lista não ta vazia
 
         // For percorrendo a lista "cat", e filtrar os próximos resultados.
+        // Funcionando de maneira duvidosa.
         let cat = products.filter(products => products.cartegoria === parseInt(obj[0].cartegoria));
 
         fil.push(cat);
@@ -255,6 +262,7 @@ function clear(arr) {
         }
     }
 
+    // Eliminação dos elementos duplicados.
     function getUniqueListBy(arr, key) {
         return [...new Map(arr.map(item => [item[key], item])).values()]
     }
@@ -265,9 +273,13 @@ function clear(arr) {
 }
 
 function gridfilterproducts(lista) {
+    // Remove os produtos que estão sendo apresentados.
+
     const displaying = document.querySelector(".product-container");
 
     displaying.remove()
+
+    // Cria novamente as divs essenciais
 
     const displayable = document.querySelector(".conteudoCentral");
 
@@ -281,10 +293,11 @@ function gridfilterproducts(lista) {
 }
 
 function produtoselecionados(array){
+    // Percorre a lista de objetos
 
     for (let i = 0; i < array.length; i++) {
         gridproducts(array[i]);
-        console.log(array[i]);
+        //console.log(array[i]);
     }
 }
 
