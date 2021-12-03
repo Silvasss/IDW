@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url("https://www.w3schools.com/w3css/4/w3.css");
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 30px 10%;
+}
+
+.contato {
+    cursor: pointer;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: cadetblue;
+}
+
+.contatoButton {
+    padding: 4px 20px;
+    background-color: cadetblue;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: dodgerblue;
+}
+
+.two {
+    background-color: slategray;
+}
+
+#nav2 {
+    display: flex;
+}
+
+.logo {
+    position: absolute;
+}
+
+.logo {
+    width: 80px;
+    margin-top: -30px;
+    background-color: slategray;
+}
+
+.subNav {
+    list-style: none;
+    background-color: slategray;
+}
+
+.subNav li {
+    display: inline-block;
+    padding: 1px 10px;
+    margin-left: 70px;
+    background-color: slategray;
+}
+
+.subNav li a {
+    transition: all 0.3s ease 0s;
+}
+
+.subNav li a:hover {
+    color: cadetblue;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    display: inline-block;
+}
+
+.searchTerm {
+    font-size: 15px;
+    border: 0px;
+    width: 390px;
+    background-color: transparent;
+}
+
+.searchButton {
+    width: 0px;
+    height: 0px;
+    border: 1px;
+    cursor: pointer;
+    position: absolute;
+    float: right;
+}
+
+.wrap {
+    position: absolute;
+    top: 130px;
+    right: 12%;
+    transform: translate(0%, 0%);
+    background-color: transparent;
+}
+
+.menuLateral {
+    display: flex;
+    padding-left: 10%;
+    padding-top: 5%;
+}
+
+.menuLateral {
+    float: left;
+    width: 25%;
+}
+
+.menuLateral .tituloMenuLateral {
+    font-weight: bold;
+}
+
+.menuLateral .nomesFiltrosMenuLateral {
+    display: flex;
+}
+
+.menuLateral .nomesFiltrosMenuLateral {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.listaFiltros {
+    display: block;
+    position: relative;
+    padding-left: 2px;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.menuLateral ul {
+    list-style: none;
+    padding: 0;
+}
+
+.conteudoCentral {
+    padding: 20px;
+    width: 70%;
+}
+
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: -70%;
+    width: 100%;
+    background-color: slategray;
+}
+
+.footerFinal {
+    background-color: slategray;
+}
+
+.footerFinal li{
+    display: inline-block;
+    padding: 6px 10px;
+    margin-left: 11%;
+    margin-right: 5%;
+    background-color: slategray;
+}
+
+.footerFinal a {
+    font-weight: bold;
+}
+
+.row h6{
+    position: absolute;
+    right: 18.5%;
+    top: 22.5%;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.row select {
+    position: absolute;
+    right: 11%;
+    top: 23.5%;
+}
+
+.product-container {
+    display: grid;
+    margin-top: 5%;
+    grid-template-columns: repeat(3, 47%);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.product-container .card {
+    padding: 3em;
+}
+
+.product-container .card {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 1em;
+    text-align: center;
+}
+
+.card .nomeProduto, .price{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card img {
+    max-width: 50%;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .searchTerm, .search-container, .searchButton, .wrap {
+        width: 10%;
+    }
+}

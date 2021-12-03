@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Title</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <script src="main.js" defer></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <header>
+        <a class="contato" href="#"><button class="contatoButton">Fale conosco</button></a>
+
+        <nav>
+            <u class="nav_links">
+                <li><a href="#"><i class="material-icons">person</i>Entrar</a></li>
+                <li><a href="#"><i class="material-icons">shopping_cart</i>Carrinho (0)</a></li>
+            </u>
+        </nav>
+    </header>
+
+    <header class="two">
+        <nav id="nav2">
+            <img class="logo" src="logo.png">
+
+            <ul class="subNav">
+                <li><a href="#">Roupas</a></li>
+                <li><a href="#">Acessórios</a></li>
+                <li><a href="#">Objetos</a></li>
+                <li><a href="#">Outros</a></li>
+            </ul>
+
+            <div class="wrap">
+                <div class="search-container">
+                    <input type="text" placeholder="Pesquisar" class="searchTerm">
+                    <button class="searchButton" type="submit"><i class="material-icons">search</i></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+
+        <nav class="menuLateral">
+            <ul>
+                <li><a href="#" class="tituloMenuLateral">Filtra por</a></li>
+
+                <li><a href="#" class="nomesFiltrosMenuLateral">Categoria</a></li>
+                    <label class="listaFiltros">
+                        <input type="checkbox" id="Byproducts" value=1 onclick="filterProductsType()"> Tipo 1
+                    </label>
+
+                    <label class="listaFiltros">
+                        <input type="checkbox" id="Byproducts1" value=2 onclick="filterProductsType()"> Tipo2
+                    </label>
+
+                <li><a href="#" class="nomesFiltrosMenuLateral">Cor</a></li>
+                    <label class="listaFiltros">
+                        <input type="checkbox" id="Bicolor" value="Branco" onclick="filterProductsType()"> Branco
+                    </label>
+
+                    <label class="listaFiltros">
+                        <input type="checkbox" id="Bicolor1" value="Preto" onclick="filterProductsType()"> Preto
+                    </label>
+
+                <li><a href="#" class="nomesFiltrosMenuLateral">Marca</a></li>
+                    <label class="listaFiltros">
+                        <input type="checkbox" id="brand" value="Brown" onclick="filterProductsType()"> Brown
+                    </label>
+
+                    <label class="listaFiltros">
+                        <input type="checkbox" id="brand1" value="Mug" onclick="filterProductsType()"> Mug
+                    </label>
+
+                <li><a href="#" class="nomesFiltrosMenuLateral">Fornecedor</a></li>
+                    <label class="listaFiltros">
+                        <input type="checkbox" id="fornecedor" value="Ambev" onclick="filterProductsType()"> Ambev
+                    </label>
+
+                    <label class="listaFiltros">
+                        <input type="checkbox" id="fornecedor1" value="Anatel" onclick="filterProductsType()"> Anatel
+                    </label>
+
+            </ul>
+        </nav>
+
+        <article class="conteudoCentral">
+            <div class="row">
+                <h6>Ordenar por</h6>
+
+                <select>
+                    <option>Mais relevantes</option>
+                    <option>Menor preço</option>
+                    <option>Maior preço</option>
+                </select>
+            </div>
+
+            <div class="product-container">
+
+            </div>
+
+        </article>
+
+    </section>
+
+    <footer>
+        <ul class="footerFinal">
+            <li><a href="#">PRODUTOS</a></li>
+            <li><a href="#">NOSSA EMPRESA</a></li>
+            <li><a href="#">SUA CONTA</a></li>
+            <li><a href="#">INFORMAÇÕES DA LOJA</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
